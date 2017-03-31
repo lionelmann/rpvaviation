@@ -1,0 +1,107 @@
+.navbar-fixed {
+    height: 80px; 
+    position: fixed;
+    @media #{$small-and-down} {
+        height: 60px;
+    }
+}
+
+nav {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: 0.3s all linear;
+    height: 80px;
+    @media #{$small-and-down} {
+        height: 55px;
+    }
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 8px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+nav ul a:hover {
+    background-color: transparent;
+}
+
+nav.change-color {
+    background-color: white;
+    border-bottom: 1px solid lighten($black, 90);
+}
+
+nav.change-color li a {
+    color: lighten($black, 50);
+}
+
+/* Effect 13: three circles */
+.cl-effect-13 a {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.cl-effect-13 a::before {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    color: transparent;
+    content: '•';
+    text-shadow: 0 0 transparent;
+    font-size: 1.2em;
+    -webkit-transition: text-shadow 0.3s, color 0.3s;
+    -moz-transition: text-shadow 0.3s, color 0.3s;
+    transition: text-shadow 0.3s, color 0.3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.cl-effect-13 a:hover::before,
+.cl-effect-13 a:focus::before {
+    color: #fff;
+    text-shadow: 10px 0 #fff, -10px 0 #fff;
+}
+
+.cl-effect-13 a.active::before {
+    color: red;
+    text-shadow: 10px 0 red, -10px 0 red;
+}
+
+.cl-effect-13 a.active {
+    color: red;
+}
+
+
+nav.change-color a:hover::before{
+    color: lighten($black, 50);
+    text-shadow: 10px 0 lighten($black, 50), -10px 0 lighten($black, 50);
+}
+
+.cl-effect-13 a:hover,
+.cl-effect-13 a:focus {
+    //color: #ba7700;
+}
+
+nav.change-color .button-collapse {
+    color: green;
+}
+
+#nav-mobile li a {
+    background-color: yellow;
+}
+

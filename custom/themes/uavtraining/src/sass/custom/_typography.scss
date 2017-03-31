@@ -1,0 +1,80 @@
+//Modular Scale http://www.modularscale.com/?16,44&px&1.5&web&table
+
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 300;
+    text-transform: uppercase;
+    @media #{$small-and-down} {
+        font-size: 1.7em;
+
+    }
+}
+
+h2 {
+    font-size: 2.25em;
+    @media #{$small-and-down} {
+        font-size: 2em;
+    }
+}
+
+h3 {
+    font-size: 1.833em;
+    @media #{$small-and-down} {
+        font-size: 1.5em;
+    }
+}
+
+h4 {
+    font-size: 1.5em;
+     font-weight: 200;
+     @media #{$small-and-down} {
+        font-size: 1.3em;
+    }
+}
+
+h5 {
+    font-size: 1.222em;
+     @media #{$small-and-down} {
+        font-size: 1.2em;
+    }
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    @media #{$small-and-down} {
+        font-size: .9em;
+    }
+}
+
+.about p {
+    font-size: 1.2em;
+    font-weight: 300;
+    @media #{$small-and-down} {
+            font-size: 1.1em;
+        }
+    &:first-child {
+        font-size: 1.6em;
+        @media #{$small-and-down} {
+            font-size: 1.4em;
+        }
+        font-weight: 400;
+    }
+}
+
+small {
+    font-size: 0.667em;
+}
