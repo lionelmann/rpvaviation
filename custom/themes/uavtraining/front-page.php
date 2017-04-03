@@ -1,120 +1,99 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>UAVtraining</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta name="description" content="" />
+<meta property="og:site_name" content="UAVtraining">
+<meta property="og:title" content="UAVtraining">
+<meta property="og:description" content="">
+<script src="https://use.fontawesome.com/c9581c7187.js"></script>
+<link rel='stylesheet' id='style-css'  href='<?php echo get_template_directory_uri();?>/style.css' type='text/css' media='all' />
+</head>
 
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-        <div class="container wow fadeIn">
-            <div class="col s12 center">
-                <h1>Revive Engineering works in partnership with architects, designers, and builders offering structural engineering solutions.</h1>
-                <br>
-                <a href="#contact" class="button-custom">Let's Work Together</a> 
+<body>
+
+<div class="navbar-fixed nav-wrapper">
+    <nav class="menu">
+    <!-- Logo here when ready -->
+    <ul class="right hide-on-med-and-down cl-effect-13">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Upcoming Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+         <li><a href="#about">About</a></li>
+        <li><a href="#services">Selected Filmography</a></li>
+        <li><a href="#team">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons menu">menu</i></a>
+    </nav>
+</div>
+
+<section id="top" class="scrollspy">
+    <div class="parallax-container valign-wrapper">
+        <div class="container">
+            <div class="col s12 m12 center">
+                <h1>Drone Training</h1>
+                <h4>Our training and consulting services provide the fastest way to launch your commercial and unmanned aerial vehicle business</h4>
+                <a href="#contact" class="button-custom">Learn more</a> 
             </div>
         </div>
+    <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/bg_header_banner.jpg"></div>
     </div>
-    <div class="parallax overlay"><img src="<?php echo get_home_url(); ?>/custom/uploads/2017/01/boys-1149665_1280.jpg"></div>
-</div>
+</section>
 
 <!-- ABOUT STARTS -->
 <section id="about" class="scrollspy">
-    <?php
-        $post_id = 7;
-        $queried_post = get_post($post_id);
-        $title = $queried_post->post_title;
-        $content  = wpautop($queried_post->post_content);
-    ?>
-    <div class="container" >
+        <div class="container" >
         <div class="row section ">
             <div class="col s12 m10 offset-m1 about">
-                <?php echo $content; ?>
+                <p>UAV's are real flying vehicles that share our airspace, they present enormous potential logistical and safety challenges. Transport Canada regulates UAV operations in Canada and requires all operators hold a Special Flight Operation Certificate (SFOC). In fact, failure to comply with these regulations could result in substantial penalties, seizure of equipment and shut-down of operations. </p><p>More importantly, operators who are not properly trained and certified pose a significant danger to other aircraft and could cause catastrophic incidents. UAV training provides our clients with the essential background knowledge and expertise that ensure safe legal operations.</p>
+                <p>Given their low cost compared to regular manned aerial solutions, UAV operations are increasing around the world.</p>
+                <ul>
+                UAV's are being used in:
+
+                <li>Law enforcement</li>
+                <li>Traffic accident investigations</li>
+                <li>Aerial surveying</li>
+                <li>Fire safety</li>
+                <li>Crowd control</li>
+                <li>Radiation monitoring</li>
+                <li>Military</li>
+                <li>Photography, video and movie production</li>
+                </ul>
             </div>
         </div>
     </div>
-    <?php
-    $args = array(
-        'post_type' => 'testimonials',
-        'orderby' => 'rand',
-        'posts_per_page' => 1,
-        );
-
-    query_posts($args); ?>
-
-    <div class="parallax-container valign-wrapper" style=" min-height: 500px;">
+    
+    <div class="parallax-container valign-wrapper" style=" min-height: 450px;">
     <div class="section no-pad-bot">
             <div class="container">
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
                 <blockquote>
-                    <?php echo the_content();?>
+                    <p>Richard helped our business obtain an SFOC with great efficiency and professionalism. He made sure we were knowledgeable of all rules and regulations and that we had all the tools to fly safely and legally. I would highly recommend him to anyone else looking to fly UAVs in Ontario.</p>
                 </blockquote>
-                <span class="right"> - <?php echo the_title();?></span>
-
-                <?php endwhile; endif; ?>
-                <?php rewind_posts(); ?>
+                <span class="right">- Matthew Jaglowitz, Director Exactus Energy</span>
             </div>
         </div>
-        <div class="parallax overlay"><img src="<?php echo get_home_url(); ?>/custom/uploads/2016/12/tree-trunks-1535531_1280-1200x800.jpg"></div>
+        <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/bg_testimonial.jpg"></div>
     </div>
 </section>
 
 <!-- SERVICES START -->
-<section id="services" class="row scrollspy">
-    <?php
-    $args1 = array(
-        'post_type' => 'service',
-        'orderby'   => 'menu_order',
-        'order'     => 'ASC',
-        );
+<section id="services" class="scrollspy">
+    <div class="row">
+        <div class="col m12">
 
-    query_posts($args1); ?>
-
-    <div class="col s12">
-        <div class="flex-grid">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-            $content = get_the_content();
-            $excerpt = get_the_excerpt();
-        ?>
-        <div class="flex-item">
-            <h4 class="center"><?php echo the_title();?></h4>
-            <p class="large-font"><?php echo $content;?></p>
-        </div>
-        <?php endwhile; endif; ?>
-        </div>
+    
+          
+    </div>
     </div>
 </section>
 
-<!-- TEAM STARTS -->
-<section id="team" class="scrollspy">
-    <?php
-    $args2 = array(
-        'post_type' => 'team',
-        'order'   => 'ASC',
-        );
-
-    query_posts($args2); ?>
-
-    <div class="container">
-        <div class="row section no-pad-bottom">
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-                $content   = get_the_content();
-                $creds = rwmb_meta( 'rw_creds' );
-                $role = rwmb_meta( 'rw_role' );
-                $linkedin = rwmb_meta( 'rw_linkedin' );
-            ?>
-            <div class="col s12 m4">
-            <div class="team">
-                <div class="center">
-                    <img class="circle esponsive-img avatar" src="<?php the_post_thumbnail_url(); ?>"/>
-                </div>
-                <h3><?php echo the_title();?><span class="creds"><?php echo $creds; ?></span></h3>
-                <p><?php echo $role;?>
-                <?php if($linkedin) : ?>
-                | <a href="<?php echo $linkedin;?>" target="blank">Linkedin</a></p>
-            <?php endif ?>
-                <p class="large-font"><?php echo $content;?></p>
-            </div>      
-            </div>
-            <?php endwhile; endif; ?>
-        </div>   
-    </div>
-</section>
 
 <!-- LET'S WORK TOGETHER STARTS -->
 <section id="contact" class="scrollspy">
@@ -122,41 +101,37 @@
         <div class="row section no-pad-bottom">
             <div class="col s12 m8 offset-m2 white-text ">
                 <h2 class="center">Let's Work Together</h2>
-                <div role="form" class="wpcf7" id="wpcf7-f51-o1" lang="en-US" dir="ltr">
-                    <div class="screen-reader-response"></div>
-                    <form action="/#wpcf7-f51-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                        <div style="display: none;">
-                            <input type="hidden" name="_wpcf7" value="51" />
-                            <input type="hidden" name="_wpcf7_version" value="4.6" />
-                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f51-o1" />
-                            <input type="hidden" name="_wpnonce" value="e57ab8e6e8" />
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <label for="name">Name</label><br />
-                                <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" aria-invalid="false" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <label for="email">Email</label><br />
-                                <input type="email" name="your-email" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <label for="your-message">Your Message</label><br />
-                                <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea materialize-textarea" id="textarea1" aria-invalid="false"></textarea>
-                            </div>
-                        </div>
-                        <p><input type="submit" value="Let&#039;s Talk" class="button-form right" /></p>
-                        <div class="wpcf7-response-output wpcf7-display-none"></div>
-                    </form>
-                </div>
+                
             </div>
         </div>
     </div>
 </section>
 
-<?php get_footer(); ?>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m5 white-text">
+                <h2>Contact Us</h2>
+               
+                E: <a href="#" class="white-text">Email Us</a>
+                </p>
+                <a href="" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a>
+                <a href="" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        <small>&copy; Copyright 2017. All Rights Reserved.</small>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/dist/js/app.min.js"></script>
+
+
+
+</body>
+</html>
