@@ -9,14 +9,14 @@ blockquote {
     &:before, &:after {
        font-family: 'Font Awesome';
         content: open-quote;
-        font-size: 4em;
+        font-size: 3.5em;
         line-height: 0;
-        vertical-align: -0.4em;
-        margin-right: 0.1em;
+        vertical-align: -0.35em;
+        margin-right: 0em;
     }
      &:after {
         content: close-quote;
-        margin-left: 0.1em;
+        margin-left: 0em;
     }
     p {
         display: inline;

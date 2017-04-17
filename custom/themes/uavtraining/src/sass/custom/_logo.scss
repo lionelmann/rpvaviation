@@ -1,11 +1,9 @@
 .brand-logo {
- 	width: 120px;
-    margin: .5em 0 0 .5em;
-    border: 1px solid $white;
+ 	//width: 120px;
+    margin: -.65em 0 0 .5em;
   	transition: 0.2s all linear;
   	&.change-size {
-        margin: .1em 0 0 .5em;
-    	width: 74px;
+        color: black;
   	}
   	@media #{$small-and-down} {
   		width: 150px;

@@ -13,6 +13,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri();?>/dist/images/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri();?>/dist/images/favicon-16x16.png">
 
+
 <?php wp_head(); ?>
 
 </head>

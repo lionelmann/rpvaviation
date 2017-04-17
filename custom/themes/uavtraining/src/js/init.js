@@ -67,3 +67,9 @@ $(window).on('scroll', function () {
         });
     });
 });
+
+//Lettering and Circle
+jQuery(document).ready(function($) {
+    $('h1').lettering();
+    $('h1').circleType({radius: 130});
+});

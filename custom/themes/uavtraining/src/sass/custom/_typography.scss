@@ -10,12 +10,22 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.75em;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     @media #{$small-and-down} {
         font-size: 1.7em;
-
     }
+}
+
+.heading {
+    font-size: 2.2em;
+    @media #{$small-and-down} {
+        font-size: 1.7em;
+    }
+}
+
+.subheading {
+    font-weight: 300;
 }
 
 h2 {
@@ -57,6 +67,17 @@ p {
     margin-bottom: 1.5em;
     @media #{$small-and-down} {
         font-size: .9em;
+    }
+}
+#about {
+    ul {
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+    li:before {
+        content: '\f05d';
+        font-family: 'Font Awesome';
+        margin-right: 7px;
     }
 }
 

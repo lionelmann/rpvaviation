@@ -25,7 +25,7 @@ gulp.task('browser-sync', function() {
 // Styles
 gulp.task('sass', function() {
   return sass('src/sass/style.scss', { style: 'compressed' })
-    .pipe(autoprefixer('last 2 version'))
+    //.pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(''))
     .pipe(cssnano())
     .pipe(browsersync.reload({stream: true}));
@@ -33,6 +33,8 @@ gulp.task('sass', function() {
 
 // Scripts
 var scriptList = [
+    'src/js/jquery.lettering-0.6.1.min.js',
+    'src/js/circletype.min.js',
     'src/js/wow.js',
     'src/js/materialize.js',
     'src/js/init.js',
@@ -79,7 +81,7 @@ gulp.task('default', ['clean'], function() {
 // Create watch task
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('src/sass/**/*.scss', ['sass']);
-    gulp.watch('src/images/*', ['images']);
-    gulp.watch('src/js/**/*.js', ['js']);
+    //gulp.watch('src/images/*', ['images']);
+    //gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch("*.php").on('change', browsersync.reload);
 });
