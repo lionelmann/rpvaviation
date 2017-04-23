@@ -12,4 +12,6 @@ require_once('includes/functions/remove-header-meta.php');
 require_once('includes/functions/remove-menu-id.php');
 require_once('includes/functions/remove-wp-version.php');
 
+add_filter("gform_confirmation_anchor", create_function("","return true;"));
+
 ?>
