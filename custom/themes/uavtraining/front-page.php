@@ -8,9 +8,9 @@
 <meta property="og:site_name" content="UAVtraining">
 <meta property="og:title" content="UAVtraining">
 <meta property="og:description" content="">
-<script src="https://use.fontawesome.com/c9581c7187.js"></script>
 <link rel='stylesheet' id='style-css'  href='<?php echo get_template_directory_uri();?>/style.css' type='text/css' media='all' />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://use.fontawesome.com/c9581c7187.js"></script>
 </head>
 
 <body>
@@ -43,12 +43,12 @@
             <div class="col s12 m12 center" style="position: relative; height: 140px;">
                 <h1 class="heading">Drone Training</h1>
                 <div style="position: absolute; left: 0; right: 0; top: 70px; margin: auto">
-                <object id="my-svg" type="image/svg+xml" data="<?php echo get_template_directory_uri();?>/dist/images/four_rounded_blades.svg" style="width: 80px;"></object>
+                <object id="my-svg" type="image/svg+xml" data="<?php echo get_template_directory_uri();?>/dist/images/two_rounded_blades.svg" style="width: 80px;"></object>
                 </div>
             </div>
             <div class="col s12 m12 center section wow fadeInUp">
                 <h4 class="subheading ">Our training and consulting services provide the fastest way to launch your commercial and unmanned aerial vehicle business</h4>
-                <a href="#contact" class="button-custom">Start Flying with Us Today</a> 
+                <a href="#register" class="button-custom">Start Flying with Us Today</a> 
             </div>
         </div>
     <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/bg_header_banner.jpg"></div>
@@ -120,7 +120,7 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="col s12 m5 white-text">
+            <div class="col s12 m6 white-text">
                 <h2>Contact Us</h2>
                
                 E: <a href="#" class="white-text">Email Us</a>

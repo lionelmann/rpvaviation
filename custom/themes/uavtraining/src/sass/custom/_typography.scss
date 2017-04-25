@@ -5,97 +5,96 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 
 h1 {
-    font-size: 2.75em;
+    font-size: 2.75rem;
     font-weight: 500;
     text-transform: uppercase;
     @media #{$small-and-down} {
-        font-size: 1.7em;
+        font-size: 1.7rem;
     }
 }
 
 .heading {
-    font-size: 2.2em;
+    font-size: 2.2rem;
     @media #{$small-and-down} {
-        font-size: 1.7em;
+        font-size: 1.7rem;
     }
 }
 
 .subheading {
     font-weight: 300;
+    line-height: 1.3em;
 }
 
 h2 {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     @media #{$small-and-down} {
-        font-size: 2em;
+        font-size: 2rem;
     }
 }
 
 h3 {
-    font-size: 1.833em;
+    font-size: 1.833rem;
     @media #{$small-and-down} {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
      font-weight: 200;
      @media #{$small-and-down} {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 }
 
 h5 {
-    font-size: 1.222em;
+    font-size: 1.222rem;
      @media #{$small-and-down} {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
 
 h6 {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2rem;
+    font-weight: 300;
     line-height: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     @media #{$small-and-down} {
-        font-size: .9em;
+        font-size: 1rem;
     }
 }
+
 #about {
     ul {
-        font-size: 1.1em;
+        font-size: 1.1rem;
         font-weight: 300;
     }
     li:before {
         content: '\f05d';
-        font-family: 'Font Awesome';
+        font-family: 'FontAwesome';
         margin-right: 7px;
+        color: green;
     }
 }
 
 .about p {
-    font-size: 1.2em;
-    font-weight: 300;
-    @media #{$small-and-down} {
-            font-size: 1.1em;
-        }
     &:first-child {
-        font-size: 1.6em;
+        font-size: 1.6rem;
+        font-weight: 400;
         @media #{$small-and-down} {
             font-size: 1.4em;
         }
-        font-weight: 400;
     }
 }
 
 small {
-    font-size: 0.667em;
+    font-size: 0.667rem;
 }
