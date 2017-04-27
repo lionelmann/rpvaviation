@@ -107,7 +107,7 @@
 
 <!-- LET'S WORK TOGETHER STARTS -->
 <section id="register" class="scrollspy grey lighten-4">
-    <div class="container ">
+    <div class="container">
         <div class="row section no-pad-bottom">
             <div class="col s12 m10 offset-m1">
                 <h3>Register Today</h3>
@@ -119,16 +119,16 @@
 
 <footer class="page-footer">
     <div class="container">
-        <div class="row">
-            <div class="col s12 m6 white-text">
-                <h2>Contact Us</h2>
-               
-                E: <a href="#" class="white-text">Email Us</a>
-                </p>
-                <a href="" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a>
-                <a href="" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-                <a href="" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        <div class="row section">
+            <div class="col s12 m12 white-text center">
+                15 Fitzroy Terrace<br>
+                Barrie, Ontario L4N 2Z2<br><br>
+                <a href="mailto:info@uavtraining.ca">info@uavtraining.ca</a><br><br>
+                
+                <a href="" target="_blank"><i class="fa fa-facebook-square fa-2x white-text" aria-hidden="true"></i></a>
+         
             </div>
+
         </div>
     </div>
     <div class="footer-copyright">

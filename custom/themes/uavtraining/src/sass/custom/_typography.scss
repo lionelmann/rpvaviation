@@ -18,7 +18,7 @@ h1 {
 }
 
 .heading {
-    font-size: 2.2rem;
+    font-size: 2rem;
     @media #{$small-and-down} {
         font-size: 1.7rem;
     }
@@ -92,6 +92,13 @@ p {
         @media #{$small-and-down} {
             font-size: 1.4em;
         }
+    }
+}
+
+footer a {
+    color: $white;
+    &:hover {
+        opacity: 0.8;
     }
 }
 

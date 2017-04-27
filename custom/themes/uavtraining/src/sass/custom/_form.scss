@@ -1,6 +1,4 @@
-
-
-body .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex .ginput_full {border: 1px solid red}
+/*body .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex .ginput_full {border: 1px solid red}
 
 body .gform_wrapper .gform_body .gform_fields .gfield .name_first input {
   border: 1px solid red;}
@@ -8,3 +6,43 @@ body .gform_wrapper .gform_body .gform_fields .gfield .name_first input {
 body .gform_wrapper .gform_body .gform_fields .gfield .name_first label {color: red;}
 
 body .gform_wrapper .gform_body .gform_fields .gfield .name_last {border: 1px solid red;}
+*/
+
+form {
+	margin: 1em 0 1em 0;
+}
+
+label {
+	opacity: 0.6;
+}
+
+.gfield_required {
+	color: red;
+	padding: 2px;
+}
+
+li.first_name {
+	width: 48%;
+	float: left;
+}
+
+
+
+li.last_name {
+	width: 48%;
+	float: right;
+}
+
+input{
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+input[type=submit] {
+	border: 1px solid #ccc;
+	width: 25%;
+
+}
