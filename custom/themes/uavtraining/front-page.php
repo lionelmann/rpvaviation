@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>UAVtraining</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-<meta name="description" content="" />
-<meta property="og:site_name" content="UAVtraining">
-<meta property="og:title" content="UAVtraining">
-<meta property="og:description" content="">
-<link rel='stylesheet' id='style-css'  href='<?php echo get_template_directory_uri();?>/style.css' type='text/css' media='all' />
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://use.fontawesome.com/c9581c7187.js"></script>
-</head>
-
-<body>
-
-<div class="navbar-fixed nav-wrapper">
-    <nav class="menu">
-    <a href="#"><h2 class="brand-logo"><span style="font-weight: 500;">Drone</span> <span style="font-weight: 200; font-size: .6em; font-style: italic;">Flight School</span></h2></a>
-    <ul class="right hide-on-med-and-down cl-effect-1">
-        <li><a href="#about">About</a></li>
-        <li><a href="#course">Course Info</a></li>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#contact">Contact</a></li>
-        
-    </ul>
-    <!--
-    <ul id="nav-mobile" class="side-nav">
-         <li><a href="#about">About</a></li>
-        <li><a href="#services">Selected Filmography</a></li>
-        <li><a href="#team">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons menu">menu</i></a>
-    -->
-    </nav>
-</div>
+<?php get_header(); ?>
 
 <section id="top" class="scrollspy">
     <div class="parallax-container valign-wrapper">
@@ -117,34 +80,4 @@
     </div>
 </section>
 
-<footer class="page-footer">
-    <div class="container">
-        <div class="row section">
-            <div class="col s12 m12 white-text center">
-                15 Fitzroy Terrace<br>
-                Barrie, Ontario L4N 2Z2<br><br>
-                <a href="mailto:info@uavtraining.ca">info@uavtraining.ca</a><br><br>
-                
-                <a href="" target="_blank"><i class="fa fa-facebook-square fa-2x white-text" aria-hidden="true"></i></a>
-         
-            </div>
-
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-        <small>&copy; Copyright 2017. All Rights Reserved.</small>
-        </div>
-    </div>
-</footer>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.min.js"></script>
-<script src="<?php echo get_template_directory_uri();?>/dist/js/app.min.js"></script>
-<script>
-  new Vivus('my-svg', {duration: 100});
-</script>
-
-
-</body>
-</html>
+<?php get_footer(); ?>
