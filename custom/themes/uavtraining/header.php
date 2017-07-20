@@ -38,13 +38,10 @@
 
 <div class="navbar-fixed nav-wrapper">
     <nav class="menu">
-    <a href="#"><h2 class="brand-logo"><span style="font-weight: 500;">Drone</span> <span style="font-weight: 200; font-size: .6em; font-style: italic;">Flight School</span></h2></a>
+    <a href="#"><h2 class="brand-logo"><span style="font-weight: 200;">RPV Aviation</h2></a>
     <ul class="right hide-on-med-and-down cl-effect-1">
         <li><a href="#about">About</a></li>
         <li><a href="#course">Course Info</a></li>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#contact">Contact</a></li>
-        
     </ul>
     <!--
     <ul id="nav-mobile" class="side-nav">

@@ -5,12 +5,8 @@
                 15 Fitzroy Terrace<br>
                 Barrie, Ontario L4N 2Z2<br>
                 647-313-2485<br><br>
-                <a href="mailto:info@uavtraining.ca">info@uavtraining.ca</a><br><br>
-                
-                <a href="" target="_blank"><i class="fa fa-facebook-square fa-2x white-text" aria-hidden="true"></i></a>
-         
+                <a href="mailto:info@uavtraining.ca">info@uavtraining.ca</a><br><br>     
             </div>
-
         </div>
     </div>
     <div class="footer-copyright">
