@@ -55,6 +55,7 @@
 </section>
 
 <!-- SERVICES START -->
+<!--
 <section id="course" class="scrollspy">
     <div class="container" >
         <div class="row section">
@@ -66,7 +67,7 @@
         </div>
     </div>
 </section>
-
+-->
 
 <!-- LET'S WORK TOGETHER STARTS -->
 <!--
