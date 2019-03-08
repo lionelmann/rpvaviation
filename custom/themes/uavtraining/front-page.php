@@ -53,34 +53,4 @@
         <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/bg_testimonial.jpg"></div>
     </div>
 </section>
-
-<!-- SERVICES START -->
-<!--
-<section id="course" class="scrollspy">
-    <div class="container" >
-        <div class="row section">
-            <div class="col m10 offset-m1">
-            <h3>3 Day Certified Course</h3>
-            <p>RPV Aviation uses Class 1 instuctors to develope traing programs that directly involve you and your business objective. For operators plannig to fly UAV's 25Kg or less, all aspectes of the Transport Canada UAV Knowledge requirements are taught with an empasis on your partucular use case.</p>
-            <p>The course runs for 3 days with the 4th exam day completed online. Training includes the required Aviation Radio Operators Licence. Areas of study include: Air Law, UAS airframes engines and systems, human factors, meteorology, air navigation, flight operations, theory of fligth, and radiotelephoney. The cost is $700 per person plus</p> 
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-<!-- LET'S WORK TOGETHER STARTS -->
-<!--
-<section id="register" class="scrollspy grey lighten-4">
-    <div class="container">
-        <div class="row section no-pad-bottom">
-            <div class="col s12 m10 offset-m1">
-                <h3>Register Today</h3>
-                <?php //echo do_shortcode( '[gravityform id="1" title="false" description="false"]' ); ?>    
-            </div>
-        </div>
-    </div>
-</section>
--->
-
 <?php get_footer(); ?>
