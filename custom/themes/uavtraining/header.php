@@ -39,10 +39,12 @@
 <div class="navbar-fixed nav-wrapper">
     <nav class="menu">
     <a href="#"><h2 class="brand-logo"><span style="font-weight: 200;">RPV Aviation</h2></a>
+    <!--
     <ul class="right hide-on-med-and-down cl-effect-1">
         <li><a href="#about">About</a></li>
         <li><a href="#course">Course Info</a></li>
     </ul>
+    -->
     </nav>
 </div>
 
