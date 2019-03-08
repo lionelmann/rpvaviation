@@ -43,14 +43,23 @@
         <li><a href="#about">About</a></li>
         <li><a href="#course">Course Info</a></li>
     </ul>
-    <!--
-    <ul id="nav-mobile" class="side-nav">
-         <li><a href="#about">About</a></li>
-        <li><a href="#services">Selected Filmography</a></li>
-        <li><a href="#team">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons menu">menu</i></a>
-    -->
     </nav>
 </div>
+
+<section id="top" class="scrollspy">
+    <div class="parallax-container valign-wrapper">
+        <div class="container">
+            <div class="col s12 m12 center" style="position: relative; height: 140px;">
+                <h1 class="heading">RPV Aviation</h1>
+                <div style="position: absolute; left: 0; right: 0; top: 70px; margin: auto">
+                <object id="my-svg" type="image/svg+xml" data="<?php echo get_template_directory_uri();?>/dist/images/two_rounded_blades.svg" style="width: 80px;"></object>
+                </div>
+            </div>
+            <div class="col s12 m12 center section wow fadeInUp">
+                <h4 class="subheading ">Our training and consulting services provide the fastest way to launch your commercial and unmanned aerial vehicle business</h4>
+                <!--<a href="#register" class="button-custom">Start Flying with Us Today</a>-->
+            </div>
+        </div>
+    <div class="parallax overlay"><img src="<?php echo get_template_directory_uri();?>/dist/images/bg_header_banner.jpg"></div>
+    </div>
+</section>
